@@ -1,65 +1,47 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div>
+      <h1 style={{ fontSize: "42px" }}>万里汇首页 | ZepaiAI AI智能绘图平台</h1>
+      <p style={{ fontSize: "18px", color: "#555", maxWidth: "800px" }}>
+        ZepaiAI 是线上AI图像生成SaaS服务平台，提供AI绘画、创意图片生成、素材编辑等数字化服务，支持免费试用与付费会员算力套餐，面向个人创意创作者提供AI绘图算力。
+      </p>
+
+      <section style={{ marginTop: "60px" }}>
+        <h2>会员付费套餐</h2>
+        <div style={{ display: "flex", gap: "24px", marginTop: "20px" }}>
+          <div style={{ border: "1px solid #eee", padding: "24px", borderRadius: "12px", flex: 1 }}>
+            <h3>基础试用套餐</h3>
+            <p>免费每日基础绘图额度</p>
+            <p>适合新手体验AI绘图功能</p>
+          </div>
+          <div style={{ border: "1px solid #eee", padding: "24px", borderRadius: "12px", flex: 1 }}>
+            <h3>月度会员套餐</h3>
+            <p>付费解锁高清大图、无水印、大额绘图算力</p>
+            <p>按月自动续期，随时可取消订阅</p>
+          </div>
+          <div style={{ border: "1px solid #eee", padding: "24px", borderRadius: "12px", flex: 1 }}>
+            <h3>年度会员套餐</h3>
+            <p>全年不限基础算力，商业可授权出图</p>
+            <p>性价比最高商用方案</p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </section>
+
+      <section style={{ marginTop: "60px" }}>
+        <h2>平台服务说明</h2>
+        <ul style={{ lineHeight: "2" }}>
+          <li>在线AI文生图、图生图、图片扩图、风格转换</li>
+          <li>生成作品版权归使用用户本人所有，可个人商用</li>
+          <li>平台严格过滤暴力、色情、侵权、政治敏感内容</li>
+          <li>充值为虚拟算力服务，支持72小时未使用全额退款</li>
+        </ul>
+      </section>
+
+      <section style={{ marginTop: "60px" }}>
+        <h2>联系我们</h2>
+        <p>业务咨询、退款申诉、账号问题请发送邮件至客服邮箱</p>
+        <p>邮箱：275480177@qq.com</p>
+      </section>
     </div>
   );
 }
